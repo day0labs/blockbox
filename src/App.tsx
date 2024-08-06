@@ -1,9 +1,11 @@
-import Navbar from "./components/navbar/Navbar";
+import { Navbar } from "./components/index";
+import { CardsFeatures } from "./views/index";
 
 function App() {
   return (
     <div>
       <Navbar />
+      <CardsFeatures />
     </div>
   );
 }
