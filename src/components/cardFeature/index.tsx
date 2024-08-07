@@ -39,7 +39,7 @@ const CardFeature = ({
           ))}
         </h2>
       </div>
-      <div className="flex flex-1 items-end justify-end pe-8">
+      <div className="flex flex-1 items-end justify-end pe-2">
         <img src={image} alt={title} className="object-contain max-h-48" />
       </div>
       <div className="flex items-center mt-2">
