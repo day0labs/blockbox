@@ -65,7 +65,17 @@ const CardsFeatures = () => {
   ];
 
   return (
-    <div className="flex justify-center">
+    <div className="flex flex-col items-center">
+      <div className="rounded-lg my-4 p-4 w-full md:w-1/2 mb-8 flex flex-col md:flex-row items-center md:justify-between">
+        <h1 className="w-64 p-2 bg-[#B9FF66] rounded-lg text-2xl font-bold mb-4 md:mb-0 text-center">
+          Modo de uso
+        </h1>
+        <p className="text-md text-gray-700 md:ml-4">
+          Seguí el paso a paso a través de nuestro CLI, instala las dependencias
+          y listo.
+        </p>
+      </div>
+
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-3/4 text-center">
         {features.map((feature, index) => (
           <CardFeature key={index} {...feature} />
