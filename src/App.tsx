@@ -1,4 +1,4 @@
-import { Navbar } from "./components/index";
+import { Footer, Navbar } from "./components/index";
 import { CardsFeatures } from "./views/index";
 
 function App() {
@@ -6,6 +6,7 @@ function App() {
     <div>
       <Navbar />
       <CardsFeatures />
+      <Footer />
     </div>
   );
 }
