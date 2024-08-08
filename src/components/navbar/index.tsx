@@ -1,8 +1,9 @@
 import { useState } from "react";
 import { IoLanguageOutline } from "react-icons/io5";
 import { IoMdArrowDropdown } from "react-icons/io";
-import TogleButton from "../togleButton/togleButton";
-import PointButton from "../PointButton/pointButton";
+import TogleButton from "../togleButton";
+import PointButton from "../PointButton";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
@@ -31,8 +32,8 @@ const Navbar = () => {
     <nav className="to-transparent absolute z-[100] w-full">
       <div className="max-w-screen-2xl flex flex-wrap items-end justify-between mx-auto p-4">
         <div className="flex items-center space-x-3 rtl:space-x-reverse">
-          <a
-            href="https://flowbite.com/"
+          <Link
+            to="/"
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
             <img
@@ -43,7 +44,7 @@ const Navbar = () => {
             <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
               <p className="mr-5">Blockbox</p>
             </span>
-          </a>
+          </Link>
           <div className="relative hidden md:block ml-4 items-center">
             <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
               <svg
@@ -160,40 +161,40 @@ const Navbar = () => {
 
           <ul className="bg-[#49741421] md:bg-transparent flex flex-col items-center p-4 md:p-0 mt-4 font-medium border rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 dark:bg-gray-800 md:white:bg-gray-900 dark:border-gray-700">
             <li className="w-full sm:w-80 text-left md:w-auto md:text-left">
-              <a
-                href="#"
+              <Link
+                to="/documentacion"
                 className="block py-2 px-3 text-white rounded bg-[#baff66b9] md:bg-transparent md:text-[#b9ff66] md:p-0 md:dark:text-[#b9ff66] hover:text-white md:hover:text-[#b9ff66] transition-colors duration-300"
                 aria-current="page"
               >
                 Documentación
-              </a>
+              </Link>
             </li>
             <hr className="w-full sm:w-80 h-px my-4 bg-gray-200 border-0 dark:bg-gray-700 block md:hidden" />
             <li className="w-full sm:w-80 text-left md:w-auto md:text-left">
-              <a
-                href="#"
+              <Link
+                to="/ejemplos"
                 className="block py-2 px-3 text-white rounded hover:text-[#baff66b9] md:p-0 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 transition-colors duration-300"
               >
                 Ejemplos
-              </a>
+              </Link>
             </li>
             <hr className="w-full sm:w-80 h-px my-4 bg-gray-200 border-0 dark:bg-gray-700 block md:hidden" />
             <li className="w-full sm:w-80 text-left md:w-auto md:text-left">
-              <a
-                href="#"
+              <Link
+                to="/motor"
                 className="block py-2 px-3 text-white rounded hover:text-[#baff66b9] md:p-0 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 transition-colors duration-300"
               >
                 Motor
-              </a>
+              </Link>
             </li>
             <hr className="w-full sm:w-80 h-px my-4 bg-gray-200 border-0 dark:bg-gray-700 block md:hidden" />
             <li className="w-full sm:w-80 text-left md:w-auto md:text-left">
-              <a
-                href="#"
+              <Link
+                to="/precios"
                 className="block py-2 px-3 md:mr-5 text-white rounded hover:text-[#baff66b9] md:p-0 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 transition-colors duration-300"
               >
                 Precios
-              </a>
+              </Link>
             </li>
             <hr className="w-full sm:w-80 h-px my-4 bg-gray-200 border-0 dark:bg-gray-700 block md:hidden" />
             <div className="relative z-[100] flex flex-col items-center space-y-4 py-2 md:hidden w-full">

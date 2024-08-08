@@ -1,11 +1,19 @@
-import { FloatingSvgHero } from "../components/floatingSvgHero/floatingSvgHero";
-import { SpotlightPreview } from "../components/spotlightPreview/spotlightPreview";
+import { FloatingSvgHero } from "../components/floatingSvgHero";
+import { SpotlightPreview } from "../components/spotlightPreview";
+import { Footer, Navbar } from "../components/index";
+import { CardsFeatures, Carousel } from "./index";
 
 const Header = () => {
   return (
-    <div className="h-screen w-screen flex justify-start items-center relative overflow-hidden">
-      <SpotlightPreview />
-      <FloatingSvgHero />
+    <div>
+      <div className="h-screen w-screen items-center justify-center">
+        <Navbar />
+        <FloatingSvgHero />
+        <SpotlightPreview />
+        <CardsFeatures />
+        <Carousel />
+        <Footer />
+      </div>
     </div>
   );
 };

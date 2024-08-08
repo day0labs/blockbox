@@ -1,6 +1,6 @@
 import { Spotlight } from "../ui/spotlight";
 import { FlipWords } from "../ui/flip-words";
-import { GridBackgroundDemo } from "../gridBackgroundDemo/GridBackgroundDemo";
+import { GridBackgroundDemo } from "../gridBackgroundDemo";
 
 export function SpotlightPreview() {
   const words = [

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import TogleButton from "../togleButton/togleButton";
+import TogleButton from "../togleButton";
 
 interface PointButtonProps {
   className?: string;

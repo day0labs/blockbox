@@ -1,5 +1,5 @@
 import React from "react";
-import "./togleButton.css";
+import "./index.css";
 
 interface TogleButtonProps {
   className?: string;

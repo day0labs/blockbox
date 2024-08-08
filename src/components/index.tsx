@@ -1,4 +1,4 @@
-import Navbar from "./navbar/Navbar";
+import Navbar from "./navbar";
 import CardFeature from "./cardFeature/index";
 import  Footer  from "./footer/index";
 
