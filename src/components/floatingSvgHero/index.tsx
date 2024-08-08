@@ -1,6 +1,6 @@
 export function FloatingSvgHero() {
   return (
-    <div className="absolute left-[60%] transform -translate-x-1/2 top-1/1 -translate-y-1/2 animate-float z-50 lg:block hidden">
+    <div className="absolute left-[60%] transform -translate-x-1/2 top-[20%] -translate-y-1/2 animate-float z-50 lg:block hidden">
       <svg
         version="1.0"
         xmlns="http://www.w3.org/2000/svg"
