@@ -1,4 +1,4 @@
 import CardsFeatures from "./cardsFeatures";
 import Carousel from "./carousel";
-
-export { CardsFeatures, Carousel };
+import Header from "./header";
+export { CardsFeatures, Carousel, Header };

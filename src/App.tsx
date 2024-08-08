@@ -1,7 +1,5 @@
-import Navbar from "./components/navbar/Navbar";
-import Header from "./views/header";
 import { Footer, Navbar } from "./components/index";
-import { CardsFeatures, Carousel } from "./views/index";
+import { CardsFeatures, Carousel, Header } from "./views/index";
 import "./index.css";
 
 function App() {
@@ -9,7 +7,7 @@ function App() {
     <div>
       <Navbar />
       <Header />
-       <Carousel />
+      <Carousel />
       <CardsFeatures />
       <Footer />
     </div>
@@ -17,9 +15,3 @@ function App() {
 }
 
 export default App;
-
-
-
-
-
-
