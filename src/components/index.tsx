@@ -1,3 +1,5 @@
 import Navbar from "./navbar/Navbar";
+import CardFeature from "./cardFeature/index";
+import  Footer  from "./footer/index";
 
-export { Navbar };
+export { Navbar, CardFeature, Footer };
